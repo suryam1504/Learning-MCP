@@ -1,4 +1,4 @@
-# MCP – The Lifecycle (Video 4 of 8)
+# MCP Lifecycle
 
 The MCP lifecycle is the sequence of steps that govern how a client and server establish, use, and end a **session** (one continuous connection between them).
 
