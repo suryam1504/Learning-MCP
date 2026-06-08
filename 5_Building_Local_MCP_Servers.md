@@ -14,8 +14,8 @@ A local MCP server connected to Claude Desktop. You manage expenses by talking n
 
 **Tools built:**
 - `add_expense` — inserts a transaction into SQLite (date, amount, category, subcategory, note). Claude infers dates from natural language like "last Sunday".
-- `list_expenses(start_date, end_date)` — fetches transactions in a date range
-- `summarize_expenses(start_date, end_date, category?)` — total spend, optionally by category
+- `list_expenses(start_date, end_date)` — fetches transactions in a date range.
+- `summarize_expenses(start_date, end_date, category?)` — total spend, optionally by category.
 
 **Resource added:**
 - `categories` — a JSON file of all valid categories/subcategories exposed as an MCP resource. Forces Claude to always pick from a consistent set, preventing messy DB entries like "Education" vs "education" vs "Upskilling".
