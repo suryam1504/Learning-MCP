@@ -1,5 +1,7 @@
 # MCP Introduction
 
+Everything in this repo comes from this Youtube playlist - [CampusX MCP](https://www.youtube.com/watch?v=3_TN1i3MTEU&list=PLKnIA16_Rmva_oZ9F4ayUu9qcWgF7Fyc0&index=1)
+
 ## The Problem MCP Solves
 
 After LLMs became widely used, teams started connecting them to external tools (Jira, GitHub, Slack, Drive, etc.) via **function/tool calling** — you write a function per tool, describe it to the LLM, and it calls the right one automatically.
