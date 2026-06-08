@@ -23,27 +23,8 @@ Different combinations of Local-Remote, Config-Connector connections.
 | **Manim** | Local | JSON config | Generate mathematical visualizations (like 3Blue1Brown) from plain English prompts; Claude writes + executes the Manim code |
 | **Google Drive** | Remote | Connector | Read-only access to Drive documents |
 | **Twitter/X** | Local (via npx) | JSON config | Search tweets; posting requires read+write permissions in Twitter developer settings |
+| **Weather** | Remote | JSON config | Fetches live weather data via AccuWeather API; server code runs remotely (pulled via `uvx` from GitHub, not installed locally) |
 
-Twitter JSON was supposed to be a remote connection but it seems it is a local server only as it installs packages using npm (npx) and a path to MCP server is given:
-
-```
-{
-  "mcpServers": {
-    "twitter-mcp": {
-      "command": "npx",
-      "args": ["-y", "@enescinar/twitter-mcp"],
-      "env": {
-        "API_KEY": "your_api_key_here",
-        "API_SECRET_KEY": "your_api_secret_key_here",
-        "ACCESS_TOKEN": "your_access_token_here",
-        "ACCESS_TOKEN_SECRET": "your_access_token_secret_here"
-      }
-    }
-  }
-}
-```
-
-But eh ok.
 
 ## How to Find MCP Servers
 
