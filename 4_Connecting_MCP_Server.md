@@ -1,4 +1,4 @@
-# Connecting Claude Code to Existing MCP Servers 
+# Connecting Claude Desktop to Existing MCP Servers 
 
 Using Claude Desktop (a ready-made MCP client) to connect to existing MCP servers — no building anything yet.
 
