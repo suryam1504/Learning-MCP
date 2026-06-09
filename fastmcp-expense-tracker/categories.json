@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Food",
+      "subcategories": ["Groceries", "Dining Out", "Coffee", "Snacks"]
+    },
+    {
+      "name": "Transport",
+      "subcategories": ["Fuel", "Public Transit", "Taxi/Ride-share", "Parking"]
+    },
+    {
+      "name": "Housing",
+      "subcategories": ["Rent", "Utilities", "Internet", "Maintenance"]
+    },
+    {
+      "name": "Health",
+      "subcategories": ["Doctor", "Pharmacy", "Gym", "Insurance"]
+    },
+    {
+      "name": "Entertainment",
+      "subcategories": ["Movies", "Subscriptions", "Books", "Games"]
+    },
+    {
+      "name": "Shopping",
+      "subcategories": ["Clothing", "Electronics", "Home Goods", "Other"]
+    },
+    {
+      "name": "Education",
+      "subcategories": ["Courses", "Books", "Conferences", "Subscriptions"]
+    },
+    {
+      "name": "Other",
+      "subcategories": []
+    }
+  ]
+}

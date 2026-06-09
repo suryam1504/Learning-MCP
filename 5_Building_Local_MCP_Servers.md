@@ -20,6 +20,14 @@ A local MCP server connected to Claude Desktop. You manage expenses by talking n
 **Resource added:**
 - `categories` — a JSON file of all valid categories/subcategories exposed as an MCP resource. Forces Claude to always pick from a consistent set, preventing messy DB entries like "Education" vs "education" vs "Upskilling".
 
+## Version & Command Notes (Practical, v3.4.2)
+
+- FastMCP v3 changed the decorator from `@mcp.tool()` to `@mcp.tool` (no parentheses when using default settings)
+- `fastmcp dev main.py` no longer works in v3 — the inspector is a separate subcommand: `uv run fastmcp dev inspector main.py`
+- To install a server into Claude Desktop from the CLI: `uv run fastmcp install claude-desktop main.py`
+- Always run FastMCP via `uv run` inside the project directory (not a global `fastmcp` binary)
+- Project must specify `requires-python = ">=3.12"` in `pyproject.toml`; system Python (3.9.6) is too old
+
 ## Interesting Extra: FastAPI → MCP 
 
 If you already have a FastAPI backend, FastMCP can wrap it as an MCP server automatically — all existing endpoints become tools. No rewriting needed. Useful for companies that want their product accessible via AI clients without starting from scratch.
