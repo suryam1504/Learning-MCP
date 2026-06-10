@@ -1,3 +1,5 @@
+# creating this math local server as one of the servers which will be connected with mcp client
+
 from fastmcp import FastMCP
 
 mcp = FastMCP(name="Math Server")
